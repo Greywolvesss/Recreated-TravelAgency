@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDG TRAVELS</title>
+
+    <!-- FONT STYLES -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- SWIPER JS LINK -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+<?
+    session_start();
+    include('dbcon.php');
+    ?>
+
+    <!-- header section starts -->
+
+    <section class="header">
+
+        <a href="home.php" class="logo">JDG <span>Travels.</span></a>
+
+        <nav class="navbar">
+            <a href="home.php">home</a>
+            <a href="about.php">about</a>
+            <a href="package.php">package</a>
+            <a href="book.php">book</a>
+            <a href="#" class="login-btn"><img src="images/icons8-login-60.png" alt=""></a>
+            <a href="#" class="account-btn"><img src="images/icons8-account-50.png" alt=""></a>
+        </nav>
+        
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </section>
+    <!-- header section ends -->
+
+
+
+
+    <!-- HOME SECTION STARTS -->
+    <section class="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper W">
+
+                <div class="swiper-slide slide" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/home-slide-1.jpg) no-repeat;">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>travel around the world</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/home-slide-2.jpg) no-repeat;">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>discover new places</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/home-slide-3.jpg) no-repeat;">
+                    <div class="content">
+                        <span>explore, discover, travel</span>
+                        <h3>make your tour worthwhile</h3>
+                        <a href="package.php" class="btn">discover more</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+    <!-- HOME SECTION ENDS -->
+
+
+    <!-- service section starts -->
+
+    <section class="services">
+
+        <h1 class="heading-title">Our Services</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./images/icon-1.png" alt="">
+                <h3>Visa Consultation</h3>
+                <p>We will assist you with the visa formalities, documentation, submission of application</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-2.png" alt="">
+                <h3>Tour Packages</h3>
+                <p>We offer tour packages to anywhere in the world</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-3.png" alt="">
+                <h3>Airline Ticketing</h3>
+                <p>We can book your flight to anywhere in the world</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-4.png" alt="">
+                <h3>Cruises</h3>
+                <p>We can book your holiday cruise</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-5.png" alt="">
+                <h3>Travel Insurance</h3>
+                <p>Avail a travel insurance with us</p>
+            </div>
+
+            <div class="box">
+                <img src="./images/icon-6.png" alt="">
+                <h3>Special Interest Tours</h3>
+                <p>We also offer educational tours, pilgrimage tours and company outings</p>
+            </div>
+
+        </div>
+        
+    </section>
+    <!-- SERVICE SECTION ENDS -->
+
+    <!-- HOME ABOUT SECTION STARTS -->
+    <section class="home-about">
+        
+        
+    </section>
+    <!-- HOME-ABOUT SECTION ENDS -->
+
+
+    <!-- HOME-PACKAGE SECTION STARTS -->
+    <section class="home-packages">
+
+        <h1 class="heading-title">our packages</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>adventure & tour</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Placeat animi illum inventore debitis quas? Tempore.</p>
+                    <a href="book.php" class="btn">Book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-2.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>adventure & tour</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Placeat animi illum inventore debitis quas? Tempore.</p>
+                    <a href="book.php" class="btn">Book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/img-3.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3>adventure & tour</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Placeat animi illum inventore debitis quas? Tempore.</p>
+                    <a href="book.php" class="btn">Book now</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="load-more"><a href="package.php" class="btn">Load more</a></div>
+
+    </section>
+    <!-- HOME-PACKAGE SECTION ENDS -->
+
+    
+    <!-- HOME OFFER SECTION STARTS -->
+    <section class="home-offer">
+
+        <div class="content">
+            <h3>upto 50% off</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nulla distinctio officia optio unde!</p>
+            <a href="book.php" class="btn">book now</a>
+        </div>
+
+    </section>
+    <!-- HOME-OFFER SECTION ENDS -->
+
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+
+        <div class="box-container">
+
+            <div class="row"> 
+
+                <div class="footer-col">
+                    <h3>quick links</h3>
+                    <a href="#">Home</a>
+                    <a href="#">about</a>
+                    <a href="#">package</a>
+                    <a href="#">book</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>extra links</h3>
+                    <a href="#">ask questions</a>
+                    <a href="#">about us</a>
+                    <a href="#">privacy policy</a>
+                    <a href="#">terms of use</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>contact info</h3>
+                        <div class="contact-info">
+                            <a href="#"><i class="fas fa-phone"></i>09277749213</a>
+                            <a href="#"><i class="fas fa-envelope"></i>jdginquire@gmail.com</a>
+                            <a href="#"><i class="fas fa-map"></i>Lot 4 Masinag, Antipolo City</a>
+                         </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Follow us</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div> 
+                </div>
+
+            </div>
+            <!-- end div of ROW class-->
+
+            <div class="credit">© 2022 Copyright <span>JDG Company | all rights reserved!</span></div>
+
+        </div>
+        <!-- end div of BOX-CONTAINER class-->
+
+
+    </footer>
+
+
+
+
+
+
+    <!-- SWIPER JS LINK -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- CUSTOM JS FILE LINK -->
+    <script src="script.js"></script>
+
+
+</body>
+</html>
